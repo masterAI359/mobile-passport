@@ -48,9 +48,10 @@ export function Language(props : Props) {
                 }}>
                 <div className="flex flex-col items-center justify-center gap-8 px-4 w-full h-[100vh] backdrop-blur-sm">
                     <Title />
-                    <div className="text-white text-center text-lg font-medium">
-                        language selector
-                    </div>
+                    <LanguageSelector 
+                        selectedLanguage={selectedLanguage}
+                        onLanguageSelect={handleLanguageSelect}
+                    />
                     <RoundButton onClick={() => navigate("/")}>
                         <ArrowRight className="w-4 h-4 text-white"/>
                     </RoundButton>

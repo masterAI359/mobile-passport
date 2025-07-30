@@ -85,7 +85,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
       className
     )}>
       {/* Glassmorphism background */}
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-white/20 via-white/10 to-white/5 backdrop-blur-[40px] border border-white/20" />
+      <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-white/20 via-white/10 to-white/5 backdrop-blur-[40px] border-none" />
       
       {/* Scrollable container */}
       <div 
