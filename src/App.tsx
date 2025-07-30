@@ -3,6 +3,7 @@ import { useLayoutEffect, useState } from "react";
 import { View } from "@/views/View";
 import { Home } from "@/views/Home";
 import { App } from "konsta/react";
+import Register from "./views/Register";
 
 export default function Root() {
   const [theme, setTheme] = useState<"ios" | "material">("material");
@@ -28,6 +29,7 @@ export default function Root() {
         <Routes>
           <Route path="/" element={<Home theme={theme} onTheme={setTheme} />} />
           <Route path="/view" element={<View />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </App>
     </BrowserRouter>
